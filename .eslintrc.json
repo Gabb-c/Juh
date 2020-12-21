@@ -18,6 +18,18 @@
         "semi": [
             "error",
             "always"
+        ],
+        "indent": [
+            "error",
+            4
+        ],
+        "import/no-extraneous-dependencies": [
+            "error",
+            {
+                "devDependencies": true,
+                "optionalDependencies": true,
+                "peerDependencies": false
+            }
         ]
     }
 }
