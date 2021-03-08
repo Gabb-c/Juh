@@ -1,13 +1,8 @@
 import { Client } from 'discord.js';
 import * as boxen from 'boxen';
-import { load } from 'ts-dotenv';
+import env from './config/env/env';
 
 const client = new Client();
-
-const env = load({
-    BOT_TOKEN: String,
-    BOT_PREFIX: String,
-});
 
 (async (): Promise<String> => client.login(env.BOT_TOKEN))();
 

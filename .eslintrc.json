@@ -15,10 +15,6 @@
         "@typescript-eslint"
     ],
     "rules": {
-        "semi": [
-            "error",
-            "always"
-        ],
         "indent": [
             "error",
             4
@@ -30,6 +26,28 @@
                 "optionalDependencies": true,
                 "peerDependencies": false
             }
+        ],
+        "import/extensions": [
+            "error",
+            "never"
+        ],
+        "@typescript-eslint/semi": "error",
+        "max-len": [
+            "error",
+            {
+                "code": 200
+            }
         ]
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "extensions": [
+                    ".js",
+                    ".ts"
+                ]
+            },
+            "typescript": {}
+        }
     }
 }
